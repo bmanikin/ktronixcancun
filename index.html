@@ -665,6 +665,96 @@ gtag("config", "GT-MQJQQ9V");
     }
   }
 
+
+  /* Mobile Menu Drawer Styling & Broken Icon Fixes */
+  
+  /* Fix close icon in mobile nav */
+  .mobile-nav-close i::before,
+  .mobile-nav-close::before,
+  .spaciaz-icon-times::before {
+    content: "✕" !important;
+    font-family: Arial, sans-serif !important;
+    font-style: normal !important;
+    font-weight: bold !important;
+    font-size: 1.25rem !important;
+    color: var(--primary) !important;
+  }
+  
+  /* Fix hamburger toggle icon in navbar */
+  .spaciaz-icon-bars::before,
+  .menu-mobile-nav-button i::before,
+  .menu-mobile-nav-button::before {
+    content: "☰" !important;
+    font-family: Arial, sans-serif !important;
+    font-style: normal !important;
+    font-weight: bold !important;
+    font-size: 1.25rem !important;
+    color: #ffffff !important; /* Ensure it contrast on the teal toggle background */
+  }
+
+  /* Style mobile hamburger container */
+  .menu-mobile-nav-button {
+    background-color: var(--primary) !important;
+    border-radius: 50% !important;
+    width: 42px !important;
+    height: 42px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  /* Unify mobile drawer links and colors */
+  .spaciaz-mobile-nav {
+    background-color: #ffffff !important;
+    font-family: var(--font-body) !important;
+  }
+
+  .spaciaz-mobile-nav ul.menu li a {
+    color: var(--accent) !important;
+    font-weight: 600 !important;
+    font-family: var(--font-body) !important;
+  }
+  
+  .spaciaz-mobile-nav ul.menu li.current-menu-item > a {
+    color: var(--primary) !important;
+  }
+
+  /* Fix dropdown toggle buttons (the white pills on the right) */
+  .spaciaz-mobile-nav .dropdown-toggle,
+  .spaciaz-mobile-nav button[class*="toggle"],
+  .spaciaz-mobile-nav span[class*="toggle"] {
+    background-color: #F0F7F7 !important;
+    border: 1px solid rgba(2, 128, 144, 0.15) !important;
+    border-radius: 50px !important;
+    box-shadow: none !important;
+    width: 32px !important;
+    height: 32px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .spaciaz-mobile-nav .dropdown-toggle i::before,
+  .spaciaz-mobile-nav button[class*="toggle"] i::before,
+  .spaciaz-mobile-nav span[class*="toggle"] i::before,
+  .spaciaz-mobile-nav .dropdown-toggle::before,
+  .spaciaz-mobile-nav button[class*="toggle"]::before,
+  .spaciaz-mobile-nav span[class*="toggle"]::before {
+    content: "▼" !important;
+    font-family: Arial, sans-serif !important;
+    font-style: normal !important;
+    font-size: 0.75rem !important;
+    color: var(--primary) !important;
+  }
+
+  /* Active dropdown toggle state */
+  .spaciaz-mobile-nav .dropdown-toggle.active i::before,
+  .spaciaz-mobile-nav button[class*="toggle"].active i::before,
+  .spaciaz-mobile-nav .dropdown-toggle.active::before,
+  .spaciaz-mobile-nav button[class*="toggle"].active::before {
+    content: "▲" !important;
+  }
+
 </style>
   <script type="module" crossorigin src="/ktronixcancun/assets/index-C0qAqvl5.js"></script>
 </head>
@@ -3850,7 +3940,7 @@ Guadalajara, Jalisco, México					</p>
                     <div class="spaciaz-mobile-nav">
                 <div class="menu-scroll-mobile">
                             <div class="site-branding">
-            <a href="https://ktronix.com.mx/" class="custom-logo-link" rel="home" aria-current="page"><img width="2560" height="1287" src="https://ktronix.com.mx/wp-content/uploads/2026/05/Recurso-2@2x-scaled.png" class="custom-logo" alt="K-tronix" decoding="async" srcset="https://ktronix.com.mx/wp-content/uploads/2026/05/Recurso-2@2x-scaled.png 2560w, https://ktronix.com.mx/wp-content/uploads/2026/05/Recurso-2@2x-300x151.png 300w, https://ktronix.com.mx/wp-content/uploads/2026/05/Recurso-2@2x-1024x515.png 1024w, https://ktronix.com.mx/wp-content/uploads/2026/05/Recurso-2@2x-768x386.png 768w, https://ktronix.com.mx/wp-content/uploads/2026/05/Recurso-2@2x-1536x772.png 1536w, https://ktronix.com.mx/wp-content/uploads/2026/05/Recurso-2@2x-2048x1029.png 2048w" sizes="(max-width: 2560px) 100vw, 2560px" /></a>        <div class="site-branding-text">
+            <a href="https://ktronix.com.mx/" class="custom-logo-link" rel="home" aria-current="page"><img width="2560" height="1287" src="logo-cancun.svg" class="custom-logo" alt="K-tronix" decoding="async"  sizes="(max-width: 2560px) 100vw, 2560px" /></a>        <div class="site-branding-text">
                             <h1 class="site-title"><a href="https://ktronix.com.mx/"
                                           rel="home">K-tronix</a></h1>
             
