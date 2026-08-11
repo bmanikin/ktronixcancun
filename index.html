@@ -411,6 +411,208 @@ gtag("config", "GT-MQJQQ9V");
     background-position: center !important;
   }
 
+
+  /* Mobile Responsiveness Overrides */
+  @media (max-width: 767px) {
+    /* Stacking everything inside the form vertically using flex direction column */
+    .wpcf7-form {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 1.25rem !important;
+      width: 100% !important;
+    }
+    
+    .wpcf7-form .row {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 1.25rem !important;
+      width: 100% !important;
+      margin: 0 !important;
+    }
+    
+    .wpcf7-form .column-50 {
+      width: 100% !important;
+      max-width: 100% !important;
+      flex: 0 0 100% !important;
+      float: none !important;
+      margin: 0 !important;
+    }
+    
+    /* Align text placeholders to ensure they do not cut off */
+    .wpcf7-form input[type="text"],
+    .wpcf7-form input[type="email"],
+    .wpcf7-form input[type="tel"] {
+      width: 100% !important;
+      padding: 1.1rem 1.5rem !important;
+      box-sizing: border-box !important;
+    }
+    
+    /* Stack bottom form items (Campos obligatorios & Checkbox & Button) */
+    .wpcf7-form .row > div:nth-child(5) {
+      grid-column: auto !important;
+      justify-content: center !important;
+      text-align: center !important;
+      width: 100% !important;
+      margin-top: 0.5rem !important;
+    }
+    
+    .wpcf7-form > p {
+      grid-column: auto !important;
+      justify-content: center !important;
+      text-align: center !important;
+      width: 100% !important;
+      margin: 0.5rem 0 !important;
+    }
+    
+    .mc4wp-checkbox label {
+      justify-content: center !important;
+      width: 100% !important;
+    }
+    
+    .wpcf7-form .wpcf7-button {
+      grid-column: auto !important;
+      justify-content: center !important;
+      width: 100% !important;
+      margin-top: 1rem !important;
+    }
+    
+    .submit-btn.enable-style-icon-yes,
+    .submit-btn.enable-style-icon-yes button {
+      width: 100% !important;
+      justify-content: center !important;
+    }
+    
+    /* Form Outer Section */
+    .elementor-element-284d41b {
+      padding: 3rem 1rem 4rem 1rem !important;
+      border-radius: 0 0 0 50px !important;
+    }
+    
+    /* White Card Wrapper */
+    .elementor-element-bfef70b {
+      padding: 2.5rem 1.25rem !important;
+      border-radius: 24px !important;
+      margin: 0 10px !important;
+      width: calc(100% - 20px) !important;
+    }
+    
+    /* Form Title */
+    .elementor-element-1976752 h4 {
+      font-size: 1.625rem !important;
+      margin-bottom: 1.5rem !important;
+    }
+    
+    /* Fix header logo sizing on mobile *//
+    .logo-img {
+      max-height: 38px !important;
+    }
+    
+    /* Fix any overflowing section paddings */
+    .elementor-section {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+  }
+
+
+  /* Force form fields to stack vertically as a list on all screen sizes */
+  .wpcf7-form {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+    width: 100% !important;
+  }
+  
+  .wpcf7-form .row {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  
+  .wpcf7-form .column-50 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    float: none !important;
+    margin: 0 !important;
+  }
+  
+  .wpcf7-form input[type="text"],
+  .wpcf7-form input[type="email"],
+  .wpcf7-form input[type="tel"] {
+    width: 100% !important;
+    padding: 1.2rem 2rem !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Stack bottom elements vertically for a clean layout */
+  .wpcf7-form .row > div:nth-child(5) {
+    grid-column: auto !important;
+    justify-content: flex-start !important;
+    text-align: left !important;
+    width: 100% !important;
+    margin-top: 0.5rem !important;
+  }
+  
+  .wpcf7-form > p {
+    grid-column: auto !important;
+    justify-content: flex-start !important;
+    text-align: left !important;
+    width: 100% !important;
+    margin: 0.5rem 0 !important;
+  }
+  
+  .mc4wp-checkbox label {
+    justify-content: flex-start !important;
+    width: 100% !important;
+  }
+  
+  .wpcf7-form .wpcf7-button {
+    grid-column: auto !important;
+    justify-content: flex-end !important;
+    width: 100% !important;
+    margin-top: 1rem !important;
+  }
+
+  /* Desktop card size adjustments to look slim and elegant as a list */
+  .elementor-element-bfef70b {
+    max-width: 650px !important; /* Slimmer card for single column list layout */
+  }
+
+
+  /* Super strong list layout overrides */
+  .wpcf7-form .row,
+  .wpcf7 .row,
+  div.wpcf7 .row,
+  form.wpcf7-form .row {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    gap: 1.5rem !important;
+  }
+  
+  .wpcf7-form .column-50,
+  .wpcf7 .column-50,
+  div.wpcf7 .column-50,
+  form.wpcf7-form .column-50 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    float: none !important;
+    display: block !important;
+    margin: 0 !important;
+  }
+
+  .wpcf7-form input[type="text"],
+  .wpcf7-form input[type="email"],
+  .wpcf7-form input[type="tel"] {
+    width: 100% !important;
+    padding: 1.2rem 2rem !important;
+    box-sizing: border-box !important;
+  }
+
 </style>
   <script type="module" crossorigin src="/ktronixcancun/assets/index-C0qAqvl5.js"></script>
 </head>
@@ -1808,7 +2010,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-1.png" title="logo 1" alt="logo 1" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-1.png"  alt="logo 1" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -1818,7 +2020,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-2.png" title="logo 2" alt="logo 2" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-2.png"  alt="logo 2" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -1828,7 +2030,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-3.png" title="logo 3" alt="logo 3" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-3.png"  alt="logo 3" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -1838,7 +2040,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-5.png" title="logo 5" alt="logo 5" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-5.png"  alt="logo 5" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -1848,7 +2050,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-4.png" title="logo 4" alt="logo 4" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-4.png"  alt="logo 4" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -1858,7 +2060,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-6.png" title="logo 6" alt="logo 6" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-6.png"  alt="logo 6" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -1868,79 +2070,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/08/logo-amokabel-carrusel.jpg" title="logo amokabel carrusel" alt="logo amokabel carrusel" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                    </div>
-                                                <div class="elementor-scrolling-inner">
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-1.png" title="logo 1" alt="logo 1" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-2.png" title="logo 2" alt="logo 2" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-3.png" title="logo 3" alt="logo 3" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-5.png" title="logo 5" alt="logo 5" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-4.png" title="logo 4" alt="logo 4" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-6.png" title="logo 6" alt="logo 6" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/08/logo-amokabel-carrusel.jpg" title="logo amokabel carrusel" alt="logo amokabel carrusel" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/08/logo-amokabel-carrusel.jpg"  alt="logo amokabel carrusel" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -1952,7 +2082,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-1.png" title="logo 1" alt="logo 1" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-1.png"  alt="logo 1" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -1962,7 +2092,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-2.png" title="logo 2" alt="logo 2" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-2.png"  alt="logo 2" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -1972,7 +2102,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-3.png" title="logo 3" alt="logo 3" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-3.png"  alt="logo 3" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -1982,7 +2112,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-5.png" title="logo 5" alt="logo 5" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-5.png"  alt="logo 5" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -1992,7 +2122,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-4.png" title="logo 4" alt="logo 4" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-4.png"  alt="logo 4" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2002,7 +2132,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-6.png" title="logo 6" alt="logo 6" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-6.png"  alt="logo 6" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2012,79 +2142,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/08/logo-amokabel-carrusel.jpg" title="logo amokabel carrusel" alt="logo amokabel carrusel" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                    </div>
-                                                <div class="elementor-scrolling-inner">
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-1.png" title="logo 1" alt="logo 1" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-2.png" title="logo 2" alt="logo 2" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-3.png" title="logo 3" alt="logo 3" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-5.png" title="logo 5" alt="logo 5" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-4.png" title="logo 4" alt="logo 4" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-6.png" title="logo 6" alt="logo 6" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/08/logo-amokabel-carrusel.jpg" title="logo amokabel carrusel" alt="logo amokabel carrusel" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/08/logo-amokabel-carrusel.jpg"  alt="logo amokabel carrusel" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2096,7 +2154,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-1.png" title="logo 1" alt="logo 1" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-1.png"  alt="logo 1" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2106,7 +2164,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-2.png" title="logo 2" alt="logo 2" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-2.png"  alt="logo 2" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2116,7 +2174,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-3.png" title="logo 3" alt="logo 3" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-3.png"  alt="logo 3" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2126,7 +2184,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-5.png" title="logo 5" alt="logo 5" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-5.png"  alt="logo 5" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2136,7 +2194,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-4.png" title="logo 4" alt="logo 4" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-4.png"  alt="logo 4" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2146,7 +2204,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-6.png" title="logo 6" alt="logo 6" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-6.png"  alt="logo 6" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2156,7 +2214,151 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/08/logo-amokabel-carrusel.jpg" title="logo amokabel carrusel" alt="logo amokabel carrusel" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/08/logo-amokabel-carrusel.jpg"  alt="logo amokabel carrusel" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                    </div>
+                                                <div class="elementor-scrolling-inner">
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-1.png"  alt="logo 1" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-2.png"  alt="logo 2" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-3.png"  alt="logo 3" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-5.png"  alt="logo 5" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-4.png"  alt="logo 4" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-6.png"  alt="logo 6" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/08/logo-amokabel-carrusel.jpg"  alt="logo amokabel carrusel" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                    </div>
+                                                <div class="elementor-scrolling-inner">
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-1.png"  alt="logo 1" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-2.png"  alt="logo 2" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-3.png"  alt="logo 3" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-5.png"  alt="logo 5" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-4.png"  alt="logo 4" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/logo-6.png"  alt="logo 6" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/08/logo-amokabel-carrusel.jpg"  alt="logo amokabel carrusel" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2201,7 +2403,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/10.png" title="10" alt="10" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/10.png"  alt="10" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2211,7 +2413,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/9.png" title="9" alt="9" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/9.png"  alt="9" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2221,7 +2423,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/7.png" title="7" alt="7" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/7.png"  alt="7" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2231,7 +2433,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/6.png" title="6" alt="6" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/6.png"  alt="6" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2241,7 +2443,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/5.png" title="5" alt="5" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/5.png"  alt="5" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2251,7 +2453,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/4.png" title="4" alt="4" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/4.png"  alt="4" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2261,7 +2463,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/3.png" title="3" alt="3" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/3.png"  alt="3" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2271,7 +2473,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/2.png" title="2" alt="2" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/2.png"  alt="2" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2281,99 +2483,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/1.png" title="1" alt="1" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                    </div>
-                                                <div class="elementor-scrolling-inner">
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/10.png" title="10" alt="10" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/9.png" title="9" alt="9" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/7.png" title="7" alt="7" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/6.png" title="6" alt="6" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/5.png" title="5" alt="5" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/4.png" title="4" alt="4" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/3.png" title="3" alt="3" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/2.png" title="2" alt="2" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/1.png" title="1" alt="1" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/1.png"  alt="1" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2385,7 +2495,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/10.png" title="10" alt="10" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/10.png"  alt="10" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2395,7 +2505,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/9.png" title="9" alt="9" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/9.png"  alt="9" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2405,7 +2515,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/7.png" title="7" alt="7" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/7.png"  alt="7" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2415,7 +2525,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/6.png" title="6" alt="6" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/6.png"  alt="6" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2425,7 +2535,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/5.png" title="5" alt="5" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/5.png"  alt="5" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2435,7 +2545,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/4.png" title="4" alt="4" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/4.png"  alt="4" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2445,7 +2555,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/3.png" title="3" alt="3" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/3.png"  alt="3" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2455,7 +2565,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/2.png" title="2" alt="2" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/2.png"  alt="2" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2465,99 +2575,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/1.png" title="1" alt="1" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                    </div>
-                                                <div class="elementor-scrolling-inner">
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/10.png" title="10" alt="10" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/9.png" title="9" alt="9" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/7.png" title="7" alt="7" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/6.png" title="6" alt="6" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/5.png" title="5" alt="5" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/4.png" title="4" alt="4" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/3.png" title="3" alt="3" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/2.png" title="2" alt="2" loading="lazy" />                                            </div>
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                                            <div class="elementor-scrolling-item">
-                                    <div class="elementor-scrolling-item-inner">
-
-                                                                                    <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/1.png" title="1" alt="1" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/1.png"  alt="1" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2569,7 +2587,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/10.png" title="10" alt="10" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/10.png"  alt="10" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2579,7 +2597,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/9.png" title="9" alt="9" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/9.png"  alt="9" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2589,7 +2607,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/7.png" title="7" alt="7" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/7.png"  alt="7" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2599,7 +2617,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/6.png" title="6" alt="6" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/6.png"  alt="6" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2609,7 +2627,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/5.png" title="5" alt="5" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/5.png"  alt="5" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2619,7 +2637,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/4.png" title="4" alt="4" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/4.png"  alt="4" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2629,7 +2647,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/3.png" title="3" alt="3" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/3.png"  alt="3" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2639,7 +2657,7 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/2.png" title="2" alt="2" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/2.png"  alt="2" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -2649,7 +2667,191 @@ gtag("config", "GT-MQJQQ9V");
                                     <div class="elementor-scrolling-item-inner">
 
                                                                                     <div class="elementor-image">
-                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/1.png" title="1" alt="1" loading="lazy" />                                            </div>
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/1.png"  alt="1" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                    </div>
+                                                <div class="elementor-scrolling-inner">
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/10.png"  alt="10" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/9.png"  alt="9" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/7.png"  alt="7" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/6.png"  alt="6" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/5.png"  alt="5" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/4.png"  alt="4" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/3.png"  alt="3" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/2.png"  alt="2" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/1.png"  alt="1" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                    </div>
+                                                <div class="elementor-scrolling-inner">
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/10.png"  alt="10" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/9.png"  alt="9" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/7.png"  alt="7" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/6.png"  alt="6" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/5.png"  alt="5" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/4.png"  alt="4" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/3.png"  alt="3" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/2.png"  alt="2" loading="lazy" />                                            </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                                            <div class="elementor-scrolling-item">
+                                    <div class="elementor-scrolling-item-inner">
+
+                                                                                    <div class="elementor-image">
+                                                <img decoding="async" src="https://ktronix.com.mx/wp-content/uploads/2026/05/1.png"  alt="1" loading="lazy" />                                            </div>
                                         
                                         
                                         
@@ -3526,13 +3728,13 @@ Guadalajara, Jalisco, México					</p>
             		<div class="elementor-element elementor-element-d6d379d elementor-icon-list--layout-inline elementor-list-item-link-inline elementor-align-center elementor-widget elementor-widget-icon-list" data-id="d6d379d" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
 							<ul class="elementor-icon-list-items elementor-inline-items">
 							<li class="elementor-icon-list-item elementor-inline-item">
-											<a href="https://www.facebook.com/KTRONIXMexico">
+											<a href="https://www.facebook.com/profile.php?id=61593284785329">
 
 											<span class="elementor-icon-list-text">Facebook</span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item elementor-inline-item">
-											<a href="https://www.instagram.com/ktronixmx/">
+											<a href="https://www.instagram.com/katronix_yucatanmx/">
 
 											<span class="elementor-icon-list-text">Instagram </span>
 											</a>
